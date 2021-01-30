@@ -1,6 +1,6 @@
 body {
   background: url("../img/Web\ 1920\ –\ 1@2x.png");
-  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
 }
 .toggle {
