@@ -59,4 +59,8 @@
 }
 input {
   height: 42px !important;
+  font-size: larger !important;
+}
+input[name="option"] {
+  font-size: medium !important;
 }
