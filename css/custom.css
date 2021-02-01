@@ -58,6 +58,10 @@
   #bottom-buttons-div {
     justify-content: center !important;
   }
+  #title-h3 {
+    padding-left: 0 !important;
+    float: unset !important;
+  }
 }
 @media screen and (device-aspect-ratio: 40/71) {
   #main-content-span {
