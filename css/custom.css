@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
@@ -33,23 +33,27 @@
 }
 
 @media only screen and (max-width: 768px) {
-  #options-col  {
-    width: 91.6666666667% !important;
+  div #options-col  {
+    width: auto !important;
   }
   #save {
     width: 17vh !important;
   }
   #main-content-span {
     width: 100% !important;
+    border: none !important;
   }
   body {
     padding-bottom: 10vh;
   }
   #title-col {
-    width: 91.6666666667% !important;
+    width: 100% !important;
   }
   #navbar {
-    width: 91.6666666667% !important;
+    width: 100% !important;
+  }
+  #title-div {
+    padding-left: 0 !important;
   }
 }
 @media screen and (device-aspect-ratio: 40/71) {
