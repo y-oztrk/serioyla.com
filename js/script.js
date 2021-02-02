@@ -18,9 +18,17 @@ function addOption() {
     var newOptionDiv = $(document.createElement('div'))
         .attr("id", 'newOption' + counter)
 
-    $(newOptionDiv).after().html('<div class="input-group mb-3"><input type="text" class="form-control" placeholder="Anket seçeneği..." name="options-option-' + counter + '"><button class="btn btn-outline-secondary" type="button"><img src="images/delete-24px.svg" alt="trash"></button></div>')
+    $(newOptionDiv).after().html('<div class="input-group mb-3"><input type="text" class="form-control" placeholder="Anket seçeneği..." name="options-option-' + counter + '"><button class="btn btn-outline-secondary" type="button" onclick="delOption(' + counter + ')"><img src="images/delete-24px.svg" alt="trash"></button></div>')
 
     newOptionDiv.appendTo("#options-col")
     counter++
 }
 
+function delOption(id) {
+    if (counter == 1) {
+        alert("No more textbox to remove");
+        return false;
+    }
+    counter--;
+    $("#div-option-" + id + "").remove();
+}
