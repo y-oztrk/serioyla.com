@@ -3,7 +3,7 @@ function addOption() {
     if (counter == null) {
         counter = 1
     }
-    if (counter > 10) {
+    if (counter > 5) {
         alert("maksimum")
         return false
     }
