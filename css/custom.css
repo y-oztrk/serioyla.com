@@ -33,9 +33,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  div #options-col  {
-    width: auto !important;
-  }
   #save {
     width: 17vh !important;
   }
@@ -61,6 +58,12 @@
   #title-h3 {
     padding-left: 0 !important;
     float: unset !important;
+  }
+  #add-option-col {
+    width: auto !important;
+  }
+  #options-col {
+    width: auto !important;
   }
 }
 @media screen and (device-aspect-ratio: 40/71) {
