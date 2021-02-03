@@ -4,7 +4,7 @@ function addOption() {
         counter = 1
     }
     if (counter > 5) {
-        alert("maksimum")
+        alert("Daha Fazla Anket Seçeneği Oluşturmak İçin Kaydolmanız Gereklidir :)")
         return false
     }
     var newOptionDiv = $(document.createElement('div'))
@@ -18,7 +18,7 @@ function addOption() {
 
 function delOption(id) {
     if (counter == 3) {
-        alert("minimum 2 seçenek olmalı");
+        alert("Anket Oluşturmak için Minimum 2 Anket Seçeneği Gereklidir");
         return false;
     }
     counter--;
@@ -52,3 +52,6 @@ $("#create-poll").click(function () {
         .then(function (res) { console.log(res.json()) })
         .then(function (data) { console.log(JSON.stringify(data)) })
 });
+
+
+
