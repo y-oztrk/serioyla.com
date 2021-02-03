@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+.nav-masthead .nav-link {
+  padding: 0.25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  div #options-col  {
+    width: auto !important;
+  }
+  #save {
+    width: 17vh !important;
+  }
+  #main-content-span {
+    width: 100% !important;
+    border: none !important;
+  }
+  body {
+    padding-bottom: 10vh;
+  }
+  #title-col {
+    width: 100% !important;
+  }
+  #navbar {
+    width: 100% !important;
+  }
+  #title-div {
+    padding-left: 0 !important;
+  }
+  #bottom-buttons-div {
+    justify-content: center !important;
+  }
+  #title-h3 {
+    padding-left: 0 !important;
+    float: unset !important;
+  }
+}
+@media screen and (device-aspect-ratio: 40/71) {
+  #main-content-span {
+    padding: 1rem !important;
+  }
+}
+input {
+  height: 42px !important;
+  font-size: larger !important;
+}
+input[name="option"] {
+  font-size: medium !important;
+}

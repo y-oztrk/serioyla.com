@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <!-- Font Awesome 4 (İcon CSS) -->
+  <script src="https://kit.fontawesome.com/7f9b18d6ba.js"></script>
+
+  <!-- Js Eklentileri -->
+  <script src="style/header/main.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+  <!-- Özel CSS Linkleri -->
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <title>Serioyla</title>
+</head>
+
+<body>
+
+  <!--Header Bölümü-->
+  <div class="container">
+    <div class="col-md-12">
+      <a class="nav-link justify-content-start" href="index.html" style="text-decoration: none;">
+        <h1 class="float-md-start mb-3 btn-outline-light border-3">Serioyla</h1>
+      </a>
+    </div>
+
+    <div class="col-md-12 pb-5">
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <button type="button" class="btn btn-outline-light btn"><i class="fas fa-chart-pie"></i>&#160&#160Seri Oyla</button>
+        </li>
+        &#160
+        &#160
+        &#160
+        &#160
+        <li class="nav-item">
+          <button type="button" class="btn btn-outline-light btn"><i class="far fa-envelope-open"></i>&#160&#160İletişim</button>
+        </li>
+        &#160
+        &#160
+        &#160
+        &#160
+        <li class="nav-item">
+          <button type="button" class="btn btn-outline-light btn"><i class="fas fa-sign-in-alt"></i>&#160&#160Giriş Yap</button>
+        </li>
+        &#160
+        &#160
+        &#160
+        &#160
+        <li class="nav-item">
+          <button type="button" class="btn btn-outline-light btn"><i class="fas fa-user-plus"></i>&#160&#160Kaydol</button>
+        </li>
+        &#160
+        &#160
+        &#160
+        &#160
+      </ul>
+    </div>
+  </div>
+
+  <!--Header Bölümü Bitişi-->
+
+
+  <div class="container">
+    <div class="row d-flex flex-column justify-content-center align-items-center">
+      <span class=" col-6 border border-secondary border-2 p-5 border-light" style="border-radius: 65px;">
+
+
+        <div class="row">
+          <div class="col-6">
+            <input class="form-control bg-dark  text-light border border-top-0 border-start-0 border-end-0" type="text"
+              placeholder="Anket Başlığı..." aria-label="default input example">
+          </div>
+          <div class="container">
+
+            
+              <div class="mb-3 pt-5 ">
+
+                <input type="text"
+                  class="form-control-lg bg-transparent text-light border-top-0 border-start-0 border-end-0"
+                  style="width: 100%;" id="formGroupExampleInput" placeholder="Anket Seçeneği">
+              </div>
+            
+            <div class="mb-3 pt-3">
+
+              <input type="text"
+                class="form-control-lg bg-transparent text-light border-top-0 border-start-0 border-end-0"
+                style="width: 100%;" id=" formGroupExampleInput" placeholder="Anket Seçeneği">
+            </div>
+            <div class="mb-3 pt-3">
+
+              <input type="text"
+                class="form-control-lg bg-transparent text-light border-top-0 border-start-0 border-end-0"
+                style="width: 100%;" id=" formGroupExampleInput" placeholder="Anket Seçeneği">
+            </div>
+            <div class="mb-3 pt-3">
+
+              <input type="text"
+                class="form-control-lg bg-transparent text-light border-top-0 border-start-0 border-end-0"
+                style="width: 100%;" id=formGroupExampleInput placeholder="Anket Seçeneği">
+            </div>
+            
+            <div class="container ">
+              <div class="col-2 col-md-12 align-items-end" style="display: flex;">
+
+                <div class="col-12 pt-3" style="justify-content: center;">
+                  <div class="col-12" style="display: flex; margin-left: 0px;">
+                  <button type="button" class="btn btn-outline-secondary me-2">Anketi
+                    Başlat</button> &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160
+                  <button type="button" class="btn btn-outline-secondary">Anketi Kaydet</button>
+                </div>
+              
+                <div class="col-12" style="align-items: flex-start;">
+
+                  <div class="ps-0">
+                     <input type="text"
+                      class="form-control-lg bg-transparent text-light border-top-0 border-start-0 border-end-0 text-light pt-1"
+                      id="myInput" style="width: 100%; padding-left: -50px;"  id="formGroupExampleInput"
+                      placeholder="Anket Seçeneği" value="http://serioyla.com/">
+                    </div>
+                  
+                  <div class="col-9"> &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160  
+                    <button onclick="myFunction()" type="button" class="btn btn-outline-secondary mt-4">Linki
+                      Kopyala</button>
+                  </div>
+                </div>
+                
+                </div>
+              
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+  </div>
+  </span>
+  </div>
+  </div>
+  </div>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  <!--jquery-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <!--fancybox-->
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <!--scrollreveal-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!--custom JS-->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
