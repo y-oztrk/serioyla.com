@@ -49,6 +49,6 @@ $("#create-poll").click(function () {
             method: "POST",
             body: toJSON
         })
-        .then(function (res) { return res.json(); })
-        .then(function (data) { alert(JSON.stringify(data)) })
+        .then(function (res) { console.log(res.json()) })
+        .then(function (data) { console.log(JSON.stringify(data)) })
 });
