@@ -9,17 +9,14 @@ $url = htmlspecialchars($_SERVER['SCRIPT_URL']);
 $explodeurl = explode('/', $url);
 $request = $explodeurl[2];
 
-
 switch ($requestMethod) {
   default:
     BadRequest();
     break;
   case 'POST':
     if ($request == 'create') {
-      print_r($_POST);
       $data = json_decode(file_get_contents("php://input"));
-      print_r($data);
-      echo 'oha';
+      echo $data[0]->title;
     } else {
       BadRequest();
     }

@@ -1,9 +1,0 @@
-RewriteEngine On
-<IfModule mod_rewrite.c>
-RewriteBase /
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$  router.php?link=$1 [L]
-</IfModule>
-
-RewriteRule ^link/(\d+)/? router.php?link=$1 [NC,L]
