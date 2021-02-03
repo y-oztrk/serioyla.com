@@ -71,10 +71,18 @@
     padding: 1rem !important;
   }
 }
-input {
+/* input {
   height: 42px !important;
   font-size: larger !important;
 }
 input[name="option"] {
   font-size: medium !important;
+} */
+
+input {
+  height: 50px !important;
+  font-size: 20px !important;
+  background: transparent !important;
+  color: #fff !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5) !important;
 }
