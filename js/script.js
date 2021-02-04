@@ -1,3 +1,22 @@
+function toast(icon = 'warning', ms = 2500, message, position = 'top-end') {
+    const Toast = Swal.mixin({
+        toast: true,
+        position: position,
+        showConfirmButton: false,
+        timer: ms,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    })
+
+    Toast.fire({
+        icon: icon,
+        title: message
+    })
+}
+
 var counter = 3
 function addOption() {
     if (counter == null) {
@@ -34,22 +53,24 @@ $("#create-poll").click(function () {
     for (let i = 1; i <= 10; i++) {
         var option = $('#options-option-' + i)
         if (option.val() != null) {
-            console.log(option.val())
             datas.push({
                 'option': option.val()
             })
         }
     }
-
+    console.log(datas[0].title)
     toJSON = JSON.stringify(datas)
-
-    fetch('https://serioyla.com/api/create', {
-        method: 'post',
-        body: toJSON
-    }).then(res => res.json())
-        .then(function (res) {
-            if (res.status == 200) {
-                alert('anket sihirli bir şekilde veritabanına eklendi')
-            }
-        });
+    if (datas[0].title != '' && datas[1].option != '' && datas[2].option != '') {
+        fetch('https://serioyla.com/api/create', {
+            method: 'post',
+            body: toJSON
+        }).then(res => res.json())
+            .then(function (res) {
+                if (res.status == 200) {
+                    alert('anket sihirli bir şekilde veritabanına eklendi')
+                }
+            });
+    } else {
+        toast('warning', 2500, 'Başlık ve en az iki seçenek dolu olmalı!', 'top-end')
+    }
 });
