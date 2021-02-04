@@ -56,5 +56,9 @@ $("#create-poll").click(function () {
         method: 'post',
         body: toJSON
     }).then(res => res.json())
-        .then(res => console.log(res));
+        .then(function (res) {
+            if (res.status == 200) {
+                alert('anket sihirli bir şekilde veritabanına eklendi')
+            }
+        });
 });
