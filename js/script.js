@@ -44,14 +44,17 @@ $("#create-poll").click(function () {
     // console.log(datas)
     // console.log(form.elements);
     toJSON = JSON.stringify(datas)
-    fetch("https://serioyla.com/api/create",
-        {
-            method: "POST",
-            body: toJSON
-        })
-        .then(function (res) { console.log(res.json()) })
-        .then(function (data) { console.log(JSON.stringify(data)) })
+    // fetch("https://serioyla.com/api/create",
+    //     {
+    //         method: "POST",
+    //         body: toJSON
+    //     })
+    //     .then(function (res) { console.log(res.json()) })
+    //     .then(function (data) { console.log(JSON.stringify(data)) })
+
+    fetch('https://serioyla.com/api/create', {
+        method: 'post',
+        body: toJSON
+    }).then(res => res.json())
+        .then(res => console.log(res));
 });
-
-
-

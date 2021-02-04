@@ -15,8 +15,8 @@ switch ($requestMethod) {
     break;
   case 'POST':
     if ($request == 'create') {
-      $data = json_decode(file_get_contents("php://input"));
-      echo $data[0]->title;
+      $data = file_get_contents("php://input");
+      print_r($data);
     } else {
       BadRequest();
     }
