@@ -15,8 +15,34 @@ switch ($requestMethod) {
     break;
   case 'POST':
     if ($request == 'create') {
-      $data = file_get_contents("php://input");
-      print_r($data);
+      require 'helper/db.php';
+      $data = json_decode(file_get_contents("php://input"), true);
+      // print_r($data);
+      $title = $data[0]['title'];
+
+      $getoptions = array();
+      for ($i = 1; $i <= 5; $i++) {
+        if ($data[$i]['option'] != null) {
+          $option = array(
+            $i => $data[$i]['option']
+          );
+          $getoptions[$i] = $data[$i]['option'];
+        }
+      }
+
+      // print_r(json_encode($getoptions));
+      $insert =  $db->insert('polls')
+        ->set([
+          'title' => $title,
+          'options' => json_encode($getoptions)
+        ]);
+      if ($insert) {
+        $status = array(
+          'status' => 200,
+          'message' => 'inserting successful'
+        );
+        print_r(json_encode($status));
+      }
     } else {
       BadRequest();
     }
