@@ -264,6 +264,8 @@ effect 3
 .input-wrapper {
   margin: 20px 0;
   position: relative;
+  text-align: center;
+  padding: 0.1rem;
 }
 
 .fancy-check-label,
@@ -286,10 +288,10 @@ effect 3
   transition: color 0.3s;
 }
 .fancy-check:checked + .fancy-check-label {
-  color: darkorange !important;
+  color: #28df99 !important;
 }
 .fancy-check:checked + .fancy-check-label .fancy-checkbox {
-  border-color: darkorange !important;
+  border-color: #28df99 !important;
 }
 .modern-browser .fancy-check:checked + .fancy-check-label .checkmark-path {
   -webkit-animation: checkmarkAnimation 0.5s 0s forwards;
@@ -306,14 +308,14 @@ effect 3
 }
 
 .fancy-radio:checked + .fancy-radio-label {
-  color: darkorange !important;
+  color: #28df99 !important;
 }
 .fancy-radio:checked + .fancy-radio-label .fancy-label--text::before {
   transition: transform 0.15s;
   transform: scaleX(1);
 }
 .fancy-radio:checked + .fancy-radio-label .fancy-radiobutton {
-  border-color: darkorange !important;
+  border-color: #28df99 !important;
   transition: border-color 0.5s;
 }
 .fancy-radio:checked + .fancy-radio-label .radiobutton-dot {
@@ -363,7 +365,7 @@ effect 3
   width: 100%;
 }
 .checkmark .checkmark-path {
-  stroke: darkorange !important;
+  stroke: #28df99 !important;
   stroke-width: 2px;
   transform-origin: 50% 50%;
   stroke-miterlimit: 10;
