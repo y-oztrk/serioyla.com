@@ -31,21 +31,25 @@ function addOption() {
 
     $(newOptionDiv).after().html('<div class="input-group mb-3"><input type="text" class="form-control" placeholder="Anket seçeneği..." name="options-option-' + counter + '" id="options-option-' + counter + '"><button class="btn btn-outline-secondary" type="button" onclick="delOption(' + counter + ')"><img src="images/trash.svg" alt="trash"></button></div>')
 
-    newOptionDiv.appendTo("#options-col")
+    newOptionDiv.appendTo("#options-col").hide().fadeIn()
     counter++
 }
 
 function delOption(id) {
     if (counter == 3) {
-        alert("Anket Oluşturmak için Minimum 2 Anket Seçeneği Gereklidir");
-        return false;
+        toast('warning', 2500, 'Anket oluşturmak için minimum 2 seçenek gerekli!', 'top-end')
+        return false
     }
-    counter--;
-    $("#div-option-" + id + "").remove();
+    counter--
+    // $("#div-option-" + id + "").fadeOut()
+    // $("#div-option-" + id + "").remove()
+    $("#div-option-" + id + "").fadeOut(200, function () {
+        $("#div-option-" + id + "").remove()
+    });
 }
 
 $("#create-poll").click(function () {
-    var form = document.querySelector("form");
+    var form = document.querySelector("form")
     var title = $('#poll-title').val()
     var datas = [{
         'title': title
@@ -58,7 +62,7 @@ $("#create-poll").click(function () {
             })
         }
     }
-    console.log(datas[0].title)
+
     toJSON = JSON.stringify(datas)
     if (datas[0].title != '' && datas[1].option != '' && datas[2].option != '') {
         fetch('https://serioyla.com/api/create', {
@@ -67,10 +71,10 @@ $("#create-poll").click(function () {
         }).then(res => res.json())
             .then(function (res) {
                 if (res.status == 200) {
-                    alert('anket sihirli bir şekilde veritabanına eklendi')
+                    toast('success', 2500, 'Anket sihirli bir şekilde veritabanına eklendi :)')
                 }
             });
     } else {
-        toast('warning', 2500, 'Başlık ve en az iki seçenek dolu olmalı!', 'top-end')
+        toast('error', 2500, 'Başlık ve en az iki seçenek dolu olmalı!')
     }
 });
