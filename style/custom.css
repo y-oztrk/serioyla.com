@@ -274,9 +274,10 @@ effect 3
 .input-wrapper {
   margin: 20px 0;
   position: relative;
-  border-bottom: 00.1rem solid white;
+  border-bottom: 0.09rem solid #888;
   padding: 0.1rem;
 }
+
 
 .fancy-check-label,
 .fancy-radio-label {
@@ -421,22 +422,23 @@ border-left: none;
   height: 10px;
   opacity: 0.9;
   border-radius: 13px;
-  margin-top: -140px;
-  margin-left: -166px;
+  margin-top: 20px;
+  margin-left: -170px;
 
 }
 .hide::after{
   content: '';
   position: absolute;
   bottom: 0;
-  left: 50%;
+  bottom: 100%;
   width: 0;
   height: 0;
   border: 15px solid transparent;
   border-top-color: hsl(217,19%,35%);
   border-bottom: 0;
-  margin-bottom: -15px;
-  margin-left: -15px;}
+  margin-top: -2px;
+  margin-right: -6px;
+}
   
   
   .hide p{
@@ -446,8 +448,9 @@ border-left: none;
     opacity: 0.9;
     font-size: 16px;
     letter-spacing: 5px;
-
+    padding-top: 15px;
   }
   .hide ul li{
     padding: 0px 20px;
+    padding-top: 15px;
   }
