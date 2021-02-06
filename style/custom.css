@@ -37,7 +37,10 @@
   
 }
 .share-buttons-div{
-text-align: center;
+text-align: start;
+padding-right: 70px;
+
+
 }
 .share-link{
 padding-top: 15px;
@@ -271,7 +274,7 @@ effect 3
 .input-wrapper {
   margin: 20px 0;
   position: relative;
-  text-align: center;
+  border-bottom: 00.1rem solid white;
   padding: 0.1rem;
 }
 
@@ -381,4 +384,16 @@ effect 3
   stroke-dashoffset: 48;
 }
 
+#coppy-button{
+  background-color: transparent;
+   border-top-right-radius: 13px; 
+   border-color: #ffee93;
 
+}
+#copy-input{
+  padding-left: 13px; 
+   width: 210px;
+    height: 100px; 
+    border-bottom-left-radius: 13px;
+    border-color: #ffee93;
+}
