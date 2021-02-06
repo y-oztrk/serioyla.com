@@ -33,7 +33,14 @@
 }
 #bottom-buttons-div {
   display: flex;
-  justify-content: center;
+  padding-left: 25%;
+  
+}
+.share-buttons-div{
+text-align: center;
+}
+.share-link{
+padding-top: 15px;
 }
 @media only screen and (max-width: 768px) {
   #save {
@@ -373,3 +380,5 @@ effect 3
   stroke-dasharray: 48;
   stroke-dashoffset: 48;
 }
+
+
