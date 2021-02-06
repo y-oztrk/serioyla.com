@@ -37,7 +37,10 @@
   
 }
 .share-buttons-div{
-text-align: center;
+text-align: start;
+padding-right: 70px;
+
+
 }
 .share-link{
 padding-top: 15px;
@@ -271,7 +274,7 @@ effect 3
 .input-wrapper {
   margin: 20px 0;
   position: relative;
-  text-align: center;
+  border-bottom: 00.1rem solid white;
   padding: 0.1rem;
 }
 
@@ -381,4 +384,70 @@ effect 3
   stroke-dashoffset: 48;
 }
 
+#coppy-button{
+  background-color: transparent;
+   border-bottom-right-radius: 13px; 
+   border-color: #cdd0cb;
+border-left: none;
 
+}
+#myInput{
+  padding-left: 13px; 
+   width: 210px;
+    height: 100px; 
+    border-top-left-radius: 13px;
+    border-color: #cdd0cb;
+}
+.share-icon{
+  border-radius: 50%;
+  background-color: #28df99;
+  padding: 15px;
+  cursor: pointer;
+
+}
+.share-icon:hover{
+  background-color: hsl(212,23%,69%);
+}
+.share-icon:active{
+  transform: translateY(2px);
+}
+.hide{
+  position: absolute;
+  background-color: hsl(217, 19%, 35%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 40px;
+  height: 10px;
+  opacity: 0.9;
+  border-radius: 13px;
+  margin-top: -140px;
+  margin-left: -166px;
+
+}
+.hide::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-top-color: hsl(217,19%,35%);
+  border-bottom: 0;
+  margin-bottom: -15px;
+  margin-left: -15px;}
+  
+  
+  .hide p{
+    text-transform: uppercase;
+    margin-right: 0px;
+    color: hsl(210,46%,95%);
+    opacity: 0.9;
+    font-size: 16px;
+    letter-spacing: 5px;
+
+  }
+  .hide ul li{
+    padding: 0px 20px;
+  }
