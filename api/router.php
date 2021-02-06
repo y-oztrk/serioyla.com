@@ -21,7 +21,7 @@ switch ($requestMethod) {
       $title = $data[0]['title'];
 
       $getoptions = array();
-      for ($i = 1; $i <= 5; $i++) {
+      for ($i = 1; $i <= 10; $i++) {
         if ($data[$i]['option'] != null) {
           $option = array(
             $i => $data[$i]['option']
@@ -29,17 +29,24 @@ switch ($requestMethod) {
           $getoptions[$i] = $data[$i]['option'];
         }
       }
-
+      $pollid = UniqueRandomNumbersWithinRange(100000, 999999, 1);
       // print_r(json_encode($getoptions));
       $insert =  $db->insert('polls')
         ->set([
           'title' => $title,
-          'options' => json_encode($getoptions)
+          'options' => json_encode($getoptions),
+          'pollID' => $pollid
         ]);
       if ($insert) {
         $status = array(
           'status' => 200,
           'message' => 'inserting successful'
+        );
+        print_r(json_encode($status));
+      } else {
+        $status = array(
+          'status' => 300,
+          'message' => 'something wrong'
         );
         print_r(json_encode($status));
       }
