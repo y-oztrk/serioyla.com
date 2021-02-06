@@ -71,7 +71,7 @@ $("#create-poll").click(function () {
         }).then(res => res.json())
             .then(function (res) {
                 if (res.status == 200) {
-                    toast('success', 2500, 'Anket sihirli bir şekilde veritabanına eklendi :)')
+                    window.location.href = 'https://serioyla.com/' + res.pollID
                 }
             });
     } else {

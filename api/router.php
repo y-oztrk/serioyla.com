@@ -40,7 +40,8 @@ switch ($requestMethod) {
       if ($insert) {
         $status = array(
           'status' => 200,
-          'message' => 'inserting successful'
+          'message' => 'inserting successful',
+          'pollID' => $pollid
         );
         print_r(json_encode($status));
       } else {
