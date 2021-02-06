@@ -42,16 +42,18 @@
 
     <div class="container pt-4">
         <div class="row d-flex flex-column justify-content-center align-items-center">
-            <span class="col-4 border border-secondary border-2 p-4 border-light" style="border-radius: 25px;"
+            <span class="col-6 border border-secondary border-2 p-4 border-light" style="border-radius: 25px;"
                 id="main-content-span">
                 <div class="container">
                     <div class="ps-5" id="voting-title">
-                    <h2 class="pb-2 d-inline-block" style="color: #28df99; border-bottom: 1px solid #28df99; font-size: 24px; ">Programlama Dilleri</h2>
-                </div>
+                        <h2 class="pb-2 d-inline-block"
+                            style="color: #28df99; border-bottom: 1px solid #28df99; font-size: 24px; ">Programlama
+                            Dilleri</h2>
+                    </div>
                     <div class="input-wrapper">
                         <input class="fancy-radio" hidden id="radio1" name="radio-group" type="radio"></input>
                         <label class="fancy-radio-label" for="radio1">
-                            <span class="fancy-label--text">Aliquam tincidunt mauris eu risus</span>
+                            <span class="fancy-label--text">python</span>
                             <span class="fancy-radiobutton">
                                 <span class="radiobutton-dot"></span>
                             </span>
@@ -60,7 +62,7 @@
                     <div class="input-wrapper">
                         <input class="fancy-radio" hidden id="radio2" name="radio-group" type="radio"></input>
                         <label class="fancy-radio-label" for="radio2">
-                            <span class="fancy-label--text">Aliquam tincidunt mauris eu risus</span>
+                            <span class="fancy-label--text">C++</span>
                             <span class="fancy-radiobutton">
                                 <span class="radiobutton-dot"></span>
                             </span>
@@ -69,7 +71,7 @@
                     <div class="input-wrapper">
                         <input class="fancy-radio" hidden id="radio3" name="radio-group" type="radio"></input>
                         <label class="fancy-radio-label" for="radio3">
-                            <span class="fancy-label--text">Aliquam tincidunt mauris eu risus</span>
+                            <span class="fancy-label--text">C#</span>
                             <span class="fancy-radiobutton">
                                 <span class="radiobutton-dot"></span>
                             </span>
@@ -78,7 +80,7 @@
                     <div class="input-wrapper">
                         <input class="fancy-radio" hidden id="radio4" name="radio-group" type="radio"></input>
                         <label class="fancy-radio-label" for="radio4">
-                            <span class="fancy-label--text">Aliquam tincidunt mauris eu risus</span>
+                            <span class="fancy-label--text">Javascript</span>
                             <span class="fancy-radiobutton">
                                 <span class="radiobutton-dot"></span>
                             </span>
@@ -88,14 +90,30 @@
                         <button type="submit" class="btn btn-success " style="text-align: center;">Oyla</button>
                         <label style="padding-left: 0px; padding-bottom: 13px; display: flex; padding-top: 13px;">
                             text<br>
-                          <input type="text" placeholder="serioyla.com/123456" id="copy-input">
-                        <button type="button" id="coppy-button"><img src="images/content_copy-24px.svg"alt="coppy"></button>  
+                            <input type="text" placeholder="serioyla.com/123456" id="myInput">
+                            <button type="button" id="coppy-button" onclick="myFunction()"><img
+                                    src="images/content_copy-24px.svg" alt="coppy"></button>
                         </label>
-                        
-                            
+                        <div style="padding-left: 50px;">
+                        <img src="images/share-24px (1).svg" alt="share" class="share-icon">
+                        <div class="hide">
+                            <p>Paylaş</p>
+                            <ul class="icons" style="list-style-type: none; display: flex;">
+                                <li>
+                                    <img src="images/twitter.png" alt="twitter">
+                                </li>
+                                <li>
+                                    <img src="images/twitter.png" alt="twitter">
+                                </li>
+                                <li>
+                                    <img src="images/twitter.png" alt="twitter">
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    
-                    
+                    </div>
+
+
                 </div>
 
             </span>
