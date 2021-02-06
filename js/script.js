@@ -49,7 +49,6 @@ function delOption(id) {
 }
 
 $("#create-poll").click(function () {
-    var form = document.querySelector("form")
     var title = $('#poll-title').val()
     var datas = [{
         'title': title
@@ -113,7 +112,7 @@ function myFunction() {
     });
 });
 
-$(document).redy(function(){
+$(document).ready(function(){
     $('.share-icon').on ('click', () => {
         $('.hide').toggle();
     })
