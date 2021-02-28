@@ -536,3 +536,16 @@ border-left: none;
       text-align: center;
     }
   }
+/* Charts style */
+  #main {
+    
+    width: 700px;
+	height: 400px;
+  }
+  a:link, a:visited {
+  color: #4682b4;
+}
+
+a:hover {
+  color: #4169e1;
+}
