@@ -38,16 +38,13 @@
 #bottom-buttons-div {
   display: flex;
   padding-left: 25%;
-  
 }
-.share-buttons-div{
-text-align: start;
-padding-right: 70px;
-
-
+.share-buttons-div {
+  text-align: start;
+  padding-right: 70px;
 }
-.share-link{
-padding-top: 15px;
+.share-link {
+  padding-top: 15px;
 }
 @media only screen and (max-width: 768px) {
   #save {
@@ -282,7 +279,6 @@ effect 3
   padding: 0.1rem;
 }
 
-
 .fancy-check-label,
 .fancy-radio-label {
   display: inline-block;
@@ -389,34 +385,32 @@ effect 3
   stroke-dashoffset: 48;
 }
 
-#coppy-button{
+#coppy-button {
   background-color: transparent;
-   border-bottom-right-radius: 13px; 
-   border-color: #cdd0cb;
-border-left: none;
-
+  border-bottom-right-radius: 13px;
+  border-color: #cdd0cb;
+  border-left: none;
 }
-#myInput{
-  padding-left: 13px; 
-   width: 210px;
-    height: 100px; 
-    border-top-left-radius: 13px;
-    border-color: #cdd0cb;
+#myInput {
+  padding-left: 13px;
+  width: 210px;
+  height: 100px;
+  border-top-left-radius: 13px;
+  border-color: #cdd0cb;
 }
-.share-icon{
+.share-icon {
   border-radius: 50%;
   background-color: #28df99;
   padding: 15px;
   cursor: pointer;
-
 }
-.share-icon:hover{
-  background-color: hsl(212,23%,69%);
+.share-icon:hover {
+  background-color: hsl(212, 23%, 69%);
 }
-.share-icon:active{
+.share-icon:active {
   transform: translateY(2px);
 }
-.hide{
+.hide {
   position: absolute;
   background-color: hsl(217, 19%, 35%);
   display: flex;
@@ -428,115 +422,157 @@ border-left: none;
   border-radius: 13px;
   margin-top: 20px;
   margin-left: -170px;
-
 }
-.hide::after{
-  content: '';
+.hide::after {
+  content: "";
   position: absolute;
   bottom: 0;
   bottom: 100%;
   width: 0;
   height: 0;
   border: 15px solid transparent;
-  border-top-color: hsl(217,19%,35%);
+  border-top-color: hsl(217, 19%, 35%);
   border-bottom: 0;
   margin-top: -2px;
   margin-right: -6px;
 }
-  
-  
-  .hide p{
-    text-transform: uppercase;
-    margin-right: 0px;
-    color: hsl(210,46%,95%);
-    opacity: 0.9;
-    font-size: 16px;
-    letter-spacing: 5px;
-    padding-top: 15px;
-  }
-  .hide ul li{
-    padding: 0px 20px;
-    padding-top: 15px;
-  }
 
+.hide p {
+  text-transform: uppercase;
+  margin-right: 0px;
+  color: hsl(210, 46%, 95%);
+  opacity: 0.9;
+  font-size: 16px;
+  letter-spacing: 5px;
+  padding-top: 15px;
+}
+.hide ul li {
+  padding: 0px 20px;
+  padding-top: 15px;
+}
+
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -400px;
+}
+.message-box {
+  height: 200px;
+  width: 380px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: 50px;
+  color: #fff;
+  font-family: Roboto;
+  font-weight: 300;
+}
+.message-box h1 {
+  font-size: 60px;
+  line-height: 46px;
+  margin-bottom: 40px;
+}
+.buttons-con .action-link-wrap {
+  margin-top: 40px;
+}
+.buttons-con .action-link-wrap a {
+  background: #68c950;
+  padding: 8px 25px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.buttons-con .action-link-wrap a:hover {
+  background: #5a5c6c;
+  color: #fff;
+}
+
+#Polygon-1,
+#Polygon-2,
+#Polygon-3,
+#Polygon-4,
+#Polygon-4,
+#Polygon-5 {
+  animation: float 1s infinite ease-in-out alternate;
+}
+#Polygon-2 {
+  animation-delay: 0.2s;
+}
+#Polygon-3 {
+  animation-delay: 0.4s;
+}
+#Polygon-4 {
+  animation-delay: 0.6s;
+}
+#Polygon-5 {
+  animation-delay: 0.8s;
+}
+
+@keyframes float {
+  100% {
+    transform: translateY(20px);
+  }
+}
+@media (max-width: 450px) {
   svg {
     position: absolute;
     top: 50%;
     left: 50%;
     margin-top: -250px;
-    margin-left: -400px;
+    margin-left: -190px;
   }
   .message-box {
-    height: 200px;
-    width: 380px;
-    position: absolute;
     top: 50%;
     left: 50%;
     margin-top: -100px;
-    margin-left: 50px;
-    color: #FFF;
-    font-family: Roboto;
-    font-weight: 300;
+    margin-left: -190px;
+    text-align: center;
   }
-  .message-box h1 {
-    font-size: 60px;
-    line-height: 46px;
-    margin-bottom: 40px;
-  }
-  .buttons-con .action-link-wrap {
-    margin-top: 40px;
-  }
-  .buttons-con .action-link-wrap a {
-    background: #68c950;
-    padding: 8px 25px;
-    border-radius: 4px;
-    color: #FFF;
-    font-weight: bold;
-    font-size: 14px;
-    transition: all 0.3s linear;
-    cursor: pointer;
-    text-decoration: none;
-    margin-right: 10px
-  }
-  .buttons-con .action-link-wrap a:hover {
-    background: #5A5C6C;
-    color: #fff;
-  }
+}
+/* Charts style */
+#main {
+  width: 700px;
+  height: 400px;
+}
+a:link,
+a:visited {
+  color: #4682b4;
+}
+
+a:hover {
+  color: #4169e1;
+}
+.share-result {
+  height: 40px;
+
+  border-radius: 75px;
+
   
-  #Polygon-1 , #Polygon-2 , #Polygon-3 , #Polygon-4 , #Polygon-4, #Polygon-5 {
-    animation: float 1s infinite ease-in-out alternate;
-  }
-  #Polygon-2 {
-    animation-delay: .2s; 
-  }
-  #Polygon-3 {
-    animation-delay: .4s; 
-  }
-  #Polygon-4 {
-    animation-delay: .6s; 
-  }
-  #Polygon-5 {
-    animation-delay: .8s; 
-  }
+
+  width: 40px;
+  background: #ff4646;
+  transition: 0.5s;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.share-result:hover {
+  width: 180px;
+  height: 40px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+
   
-  @keyframes float {
-    100% {
-      transform: translateY(20px);
-    }
-  }
-  @media (max-width: 450px) {
-    svg {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin-top: -250px;
-      margin-left: -190px;
-    }
-    .message-box {
-      top: 50%;
-      left: 50%;
-      margin-top: -100px;
-      margin-left: -190px;
-      text-align: center;
-    }
-  }
+  transition: 0.5s !;
+
+}
