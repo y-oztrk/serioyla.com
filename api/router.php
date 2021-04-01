@@ -18,7 +18,7 @@ switch ($requestMethod) {
       require 'helper/db.php';
       $data = json_decode(file_get_contents("php://input"), true);
       // print_r($data);
-      $title = $data[0]['title'];
+      $title = ($data[0]['title'] == null ? $data['title'] : $data[0]['title']);
 
       $getoptions = array();
       for ($i = 1; $i <= 10; $i++) {
